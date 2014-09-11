@@ -1,0 +1,24 @@
+{
+  "name": "couchr-browser",
+  "description": "Lightweight library for making CouchDB requests, based on jQuery",
+  "version": "0.0.15",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "github": "https://github.com/caolan/couchr-browser",
+  "bugs": {
+    "web": "https://github.com/caolan/couchr-browser/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/caolan/couchr-browser.git"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
