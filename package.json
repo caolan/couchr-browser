@@ -1,20 +1,15 @@
 {
-  "name": "couchr-browser",
-  "description": "Lightweight library for making CouchDB requests in the browser (no jquery required)",
+  " name": "couchr-browser",
+  "description": "Lightweight library for making CouchDB requests in the browser",
   "version": "2.0.0",
-  "dependencies": {
-    "component-ajax": "*"
-  },
   "github": "https://github.com/caolan/couchr-browser",
   "bugs": {
-    "web": "https://github.com/caolan/couchr-browser/issues"
+    "url": "https://github.com/caolan/couchr-browser/issues"
   },
-  "repositories": [
-    {
+  "repository": {
       "type": "git",
       "url": "https://github.com/caolan/couchr-browser.git"
-    }
-  ],
+  },
   "licenses": [
     {
       "type": "MIT",

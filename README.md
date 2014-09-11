@@ -1,19 +1,22 @@
 # couchr-browser
 
-Simple stand-alone request library for CouchDB. Provides a browser-compatible
+Lightweight request library for CouchDB. Provides a browser-compatible
 module, with better CouchDB error reporting and a simpler API than making XHR
 requests directly in the browser or using jQuery.ajax.
 
 This package is designed to be suitable for use with webpack or browserify,
-and makes use of the 'events' and 'component-ajax' modules.
+and makes use of the events module (for the changes feed). You can pass in any
+jQuery.ajax compatible API to initialize the module (allowing you to use your
+favourite library for this). I suggest taking a look at
+[reqwest](https://github.com/ded/reqwest) if you don't need full jQuery.
 
-Comes in around 11kb minified (4.2kb gzipped)
+Comes in around 5.9kb minified (2.2kb gzipped)
 
 
 ### Examples
 
 ```javascript
-var couchr = require('couchr-browser');
+var couchr = require('couchr-browser')(jQuery.ajax);
 
 couchr.get('http://hostname:port/dbname/docid', function (err, doc) {
     ...
@@ -23,6 +26,9 @@ couchr.get('http://hostname:port/dbname/docid', function (err, doc) {
 ### Methods
 
 ```javascript
+var couchr = require('couchr-browser')(jQuery.ajax);
+var couchr = require('couchr-browser')(reqwest.compat);
+
 couchr.get (url, /*optional*/params, function (err, res, req) { ... })
 couchr.post(url, /*optional*/data,   function (err, res, req) { ... })
 couchr.put (url, /*optional*/data,   function (err, res, req) { ... })
