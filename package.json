@@ -1,9 +1,9 @@
 {
   "name": "couchr-browser",
-  "description": "Lightweight library for making CouchDB requests, based on jQuery",
+  "description": "Lightweight library for making CouchDB requests in the browser (no jquery required)",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "*"
+    "component-ajax": "*"
   },
   "github": "https://github.com/caolan/couchr-browser",
   "bugs": {
@@ -20,5 +20,11 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
+  ],
+  "devDependencies": {
+    "webpack": "^1.4.0-beta5"
+  },
+  "scripts": {
+      "build": "./node_modules/.bin/webpack --entry ./index.js --output-file couchr.js && ./node_modules/.bin/webpack --optimize-minimize --entry ./index.js --output-file couchr.min.js"
+  }
 }

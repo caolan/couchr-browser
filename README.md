@@ -1,11 +1,13 @@
 # couchr-browser
 
-Simple request library for CouchDB. Provides a browser-compatible module
-(based on jQuery.ajax), with better CouchDB error reporting and a simpler API
-than making XHR requests directly in the browser.
+Simple stand-alone request library for CouchDB. Provides a browser-compatible
+module, with better CouchDB error reporting and a simpler API than making XHR
+requests directly in the browser or using jQuery.ajax.
 
-This package is suitable for use with webpack or browserify, and makes use
-of the 'events' module.
+This package is designed to be suitable for use with webpack or browserify,
+and makes use of the 'events' and 'component-ajax' modules.
+
+Comes in around 11kb minified (4.2kb gzipped)
 
 
 ### Examples
@@ -39,3 +41,8 @@ feed.resume();
 ### Installation
 
     npm install couchr-browser
+
+
+### Building stand-alone version
+
+    npm run build
