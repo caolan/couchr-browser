@@ -1,7 +1,7 @@
 {
   "name": "couchr-browser",
   "description": "Lightweight library for making CouchDB requests in the browser (no jquery required)",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
     "component-ajax": "*"
   },
