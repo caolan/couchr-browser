@@ -1,7 +1,7 @@
 {
   "name": "couchr-browser",
   "description": "Lightweight library for making CouchDB requests, based on jQuery",
-  "version": "0.0.15",
+  "version": "1.0.0",
   "dependencies": {
     "jquery": "*"
   },
