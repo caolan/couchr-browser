@@ -1,7 +1,7 @@
 {
-  " name": "couchr-browser",
+  "name": "couchr-browser",
   "description": "Lightweight library for making CouchDB requests in the browser",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "github": "https://github.com/caolan/couchr-browser",
   "bugs": {
     "url": "https://github.com/caolan/couchr-browser/issues"
